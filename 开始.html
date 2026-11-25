@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中文去 AI 味工具包 · 开始</title>
+<style>
+  :root{
+    --bg:#f7f6f3;
+    --card:#ffffff;
+    --ink:#1f2328;
+    --muted:#6b7280;
+    --line:#e5e2db;
+    --accent:#2c4a6e;
+    --accent-2:#3d6a96;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.75;padding:40px 20px 70px;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+  header{text-align:center;margin-bottom:36px}
+  h1{font-size:32px;letter-spacing:1px;margin-bottom:10px}
+  h1 span{color:var(--accent)}
+  .lead{color:var(--muted);font-size:15px}
+  .lead b{color:var(--ink)}
+
+  .hero{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:34px 30px;text-align:center;margin-bottom:22px;
+    box-shadow:0 2px 6px rgba(0,0,0,.04);
+  }
+  .hero p{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .big-btn{
+    display:inline-block;background:var(--accent);color:#fff;
+    text-decoration:none;font-size:17px;font-weight:700;
+    padding:14px 34px;border-radius:11px;letter-spacing:.5px;
+    transition:background .15s;
+  }
+  .big-btn:hover{background:#234058}
+  .hero small{display:block;color:var(--muted);font-size:12px;margin-top:12px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
+  @media(max-width:720px){.steps{grid-template-columns:1fr}}
+  .step{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:18px 16px;
+  }
+  .step .num{
+    width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;
+    font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;
+    margin-bottom:10px;
+  }
+  .step h3{font-size:15px;margin-bottom:6px}
+  .step p{font-size:13px;color:var(--muted)}
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:22px 24px;margin-bottom:22px;
+  }
+  .card h2{font-size:16px;margin-bottom:14px;letter-spacing:.5px}
+  .card ul{margin-left:20px}
+  .card li{font-size:14px;margin-bottom:8px}
+  .card li b{color:var(--accent)}
+  .card p{font-size:14px;color:var(--muted)}
+
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:720px){.grid3{grid-template-columns:1fr}}
+  .res{
+    display:block;background:#fdfcf9;border:1px solid var(--line);border-radius:10px;
+    padding:14px 16px;text-decoration:none;color:var(--ink);
+    transition:border-color .15s,background .15s;
+  }
+  .res:hover{border-color:#9db4cc;background:#f6f9fc}
+  .res strong{display:block;font-size:14px;margin-bottom:3px}
+  .res span{font-size:12px;color:var(--muted)}
+
+  .warn{
+    border-left:4px solid #b7791f;background:#fdf3e0;border-radius:8px;
+    padding:14px 18px;font-size:13.5px;margin-bottom:22px;
+  }
+  .warn b{color:#b7791f}
+
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px;line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>中文去 <span>AI 味</span> 工具包</h1>
+    <p class="lead">给写课程论文、开题报告、毕业论文的同学 · <b>不用安装任何东西</b></p>
+  </header>
+
+  <div class="hero">
+    <p>把文章粘贴进去，立刻看到哪里"太像 AI 写的"</p>
+    <a class="big-btn" href="检测器.html">打开检测器 →</a>
+    <small>浏览器直接打开，完全离线，文章不会离开你的电脑</small>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>打开检测器</h3>
+      <p>点上面的蓝色按钮，或者直接双击 <b>检测器.html</b>。</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>粘贴你的文章</h3>
+      <p>建议 500 字以上。会显示 AI 味评分和具体问题。</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>按建议改</h3>
+      <p>右边会列出该改哪里。改完再测一次，看分数有没有降。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>这套方法在治什么</h2>
+    <p style="margin-bottom:12px">AI 写的东西有一个共同点：<b style="color:var(--ink)">什么都很平均</b>——句长平均、段落平均、每个理论都点到即止。</p>
+    <ul>
+      <li><b>具体</b>：每个抽象判断后面挂一个真实的细节（谁、哪本书、什么时候、多少）。</li>
+      <li><b>方差</b>：句子有长有短，段落有长有短，别每段都一个模样。</li>
+      <li><b>结构</b>：有自己的转折线，不是"引言—分论点—综上所述"的模板。</li>
+    </ul>
+  </div>
+
+  <div class="warn">
+    <b>先说清楚</b>：这不是帮你用 AI 代写的工具。正确用法是——你自己写，用它检查哪里像机器写的，再改。<b>数据和引用必须是真的</b>，这个没得商量。
+  </div>
+
+  <div class="card">
+    <h2>进阶资料（想深入看的时候）</h2>
+    <div class="grid3">
+      <a class="res" href="指南.md">
+        <strong>完整指南</strong>
+        <span>原理、五个抓手、红线、自检清单</span>
+      </a>
+      <a class="res" href="prompt.md">
+        <strong>提示词模板</strong>
+        <span>复制给豆包 / Kimi / DeepSeek 用</span>
+      </a>
+      <a class="res" href="examples/对照示例说明.md">
+        <strong>对照示例</strong>
+        <span>同一主题的"AI 腔"和"人味"两篇</span>
+      </a>
+    </div>
+    <p style="margin-top:12px;font-size:12px">（这些是 .md 文件，用记事本或 VS Code 打开就能看。）</p>
+  </div>
+
+  <footer>
+    版本 1.0 ｜ 开源地址：github.com/ab2836304651/deai-writing-kit<br>
+    检测结果因平台而异，本工具只作方向参考，不保证任何检测器的具体分数。
+  </footer>
+</div>
+</body>
+</html>
