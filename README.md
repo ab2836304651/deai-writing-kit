@@ -8,7 +8,7 @@
 ## 获取
 
 - **最简单**：下载本仓库的 zip（Code → Download ZIP），解压即用。
-- **命令行**：`git clone https://github.com/<你的GitHub用户名>/deai-writing-kit.git`
+- **命令行**：`git clone https://github.com/ab2836304651/deai-writing-kit.git`
 
 ---
 
